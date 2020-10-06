@@ -5,7 +5,13 @@ function LandingPage () {
   // const landingPage = () => {}
   return (
     <Fragment>
+<<<<<<< HEAD
       const element = <h1>Hello, world</h1>
+=======
+      <div>
+        <img href='https://i.imgur.com/kCoejp0.png' />
+      </div>
+>>>>>>> master
     </Fragment>
   )
 }

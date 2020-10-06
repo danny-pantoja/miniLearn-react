@@ -6,7 +6,7 @@ function InstructorContent () {
   return (
     // BEM
     <div className='app'>
-      <h1>Hello World!</h1>
+      <h1>Welcome to miniLearn</h1>
       <div className='app__videos'>
         <Video />
         <Video />

@@ -1,11 +1,13 @@
 import React, { Fragment } from 'react'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
+import styles from './Header.css'
 
 const authenticatedOptions = (
   <Fragment>
     <Nav.Link href="#change-password">Change Password</Nav.Link>
     <Nav.Link href="#sign-out">Sign Out</Nav.Link>
+    <Nav.Link href="#instructor-content">Instructor Content</Nav.Link>
   </Fragment>
 )
 
@@ -23,9 +25,9 @@ const alwaysOptions = (
 )
 
 const Header = ({ user }) => (
-  <Navbar bg="primary" variant="dark" expand="md">
+  <Navbar bg="primary" className={ user ? '' : styles.navbarBackground} variant="dark" expand="md">
     <Navbar.Brand href="#">
-      react-auth-template
+      miniLearn
     </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
