@@ -7,7 +7,8 @@ const authenticatedOptions = (
   <Fragment>
     <Nav.Link href="#change-password">Change Password</Nav.Link>
     <Nav.Link href="#sign-out">Sign Out</Nav.Link>
-    <Nav.Link href="#instructor-content">Instructor Content</Nav.Link>
+    <Nav.Link href="#videos">Videos</Nav.Link>
+    <Nav.Link href="#video-create">Video Create</Nav.Link>
   </Fragment>
 )
 
@@ -41,3 +42,5 @@ const Header = ({ user }) => (
 )
 
 export default Header
+// <Nav.Link href="#instructor-content">Instructor Content</Nav.Link>
+// <Nav.Link href="#instructor-content-create">Instructor Content Create</Nav.Link>

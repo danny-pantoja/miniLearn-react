@@ -5,5 +5,9 @@ export default {
   signInFailure: 'Failed to sign in. Check your email and password and try again.',
   signOutSuccess: 'Come back soon!',
   changePasswordSuccess: 'Password changed successfully!',
-  changePasswordFailure: 'Failed to change passwords. Check your old password and try again.'
+  changePasswordFailure: 'Failed to change passwords. Check your old password and try again.',
+  instructorContentCreateSuccess: 'Content added successfully',
+  instructorContentCreateFailure: 'Conent not added, please check and try again.',
+  videoCreateSuccess: 'Content added successfully',
+  videoCreateFailure: 'Conent not added, please check and try again.'
 }

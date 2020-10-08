@@ -1,1 +1,14 @@
 
+.landingPageImage {
+  height: 100vh;
+  background-color: black;
+  display: grid;
+  place-items: center;
+  postion: relative;
+  height: 800px;
+  border-radius: 20px;
+  overflow: scroll;
+  width: 80%;
+  max-width: 500px;
+  scroll-snap-type: y mandatory;
+}
