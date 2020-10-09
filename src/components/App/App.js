@@ -4,7 +4,8 @@ import { Route } from 'react-router-dom'
 import AuthenticatedRoute from '../AuthenticatedRoute/AuthenticatedRoute'
 import AutoDismissAlert from '../AutoDismissAlert/AutoDismissAlert'
 import Header from '../Header/Header'
-import InstructorContent from '../InstructorContent/InstructorContent'
+import Videos from '../Videos/Videos'
+import VideoCreate from '../Video/VideoCreate'
 import SignUp from '../SignUp/SignUp'
 import SignIn from '../SignIn/SignIn'
 import SignOut from '../SignOut/SignOut'
@@ -50,8 +51,11 @@ class App extends Component {
           <Route exact path='/' render={() => (
             <Home />
           )} />
-          <Route exact path='/instructor-content' render={() => (
-            <InstructorContent />
+          <AuthenticatedRoute user={user} exact path='/video-create' render={() => (
+            <VideoCreate msgAlert={this.msgAlert} user={user} />
+          )} />
+          <AuthenticatedRoute user={user} exact path='/videos' render={() => (
+            <Videos msgAlert={this.msgAlert} user={user} />
           )} />
           <Route path='/sign-in' render={() => (
             <SignIn msgAlert={this.msgAlert} setUser={this.setUser} />
@@ -70,3 +74,11 @@ class App extends Component {
 }
 
 export default App
+// import InstructorContent from '../InstructorContent/InstructorContent'
+// import InstructorContentCreate from '../InstructorContentCreate/InstructorContentCreate'
+// <Route exact path='/instructor-content' render={() => (
+//   <InstructorContent />
+// )} />
+// <Route exact path='/instructor-content-create' render={() => (
+//   <InstructorContentCreate />
+// )} />
