@@ -1,6 +1,6 @@
 let apiUrl
 const apiUrls = {
-  production: 'https://mini-learn-django.herokuapp.com',
+  production: 'https://mini-learn-django.herokuapp.com/',
   development: 'http://localhost:8000'
 }
 
