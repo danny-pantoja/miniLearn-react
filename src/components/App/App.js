@@ -4,8 +4,9 @@ import { Route } from 'react-router-dom'
 import AuthenticatedRoute from '../AuthenticatedRoute/AuthenticatedRoute'
 import AutoDismissAlert from '../AutoDismissAlert/AutoDismissAlert'
 import Header from '../Header/Header'
+import Video from '../Video/Video'
 import Videos from '../Videos/Videos'
-import VideoCreate from '../Video/VideoCreate'
+import VideoCreate from '../VideoCreate/VideoCreate'
 import SignUp from '../SignUp/SignUp'
 import SignIn from '../SignIn/SignIn'
 import SignOut from '../SignOut/SignOut'
@@ -53,6 +54,9 @@ class App extends Component {
           )} />
           <AuthenticatedRoute user={user} exact path='/video-create' render={() => (
             <VideoCreate msgAlert={this.msgAlert} user={user} />
+          )} />
+          <AuthenticatedRoute user={user} exact path='/video' render={() => (
+            <Video msgAlert={this.msgAlert} user={user} />
           )} />
           <AuthenticatedRoute user={user} exact path='/videos' render={() => (
             <Videos msgAlert={this.msgAlert} user={user} />

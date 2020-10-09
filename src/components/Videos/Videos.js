@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import Layout from '../shared/Layout'
 import apiUrl from '../../apiConfig'
 import axios from 'axios'
-
 // This will be our videos Index component (show all videos)
 class Videos extends Component {
   constructor (props) {
@@ -19,12 +18,11 @@ class Videos extends Component {
   // this is called whenever our component is created and inserted
   // into the DOM (first appears)
   componentDidMount () {
-    // make a GET request for all of the videos
+    // make a GET request for all of the books
     axios(`${apiUrl}/videos/`)
       .then(res => this.setState({ videos: res.data.videos }))
       .catch(console.error)
   }
-
   render () {
     const videos = this.state.videos.map(video => (
       <li key={video._id}>

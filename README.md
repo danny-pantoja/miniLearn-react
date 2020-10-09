@@ -9,6 +9,15 @@ miniLearn is video sharing app for allowing snipets of videos for programming an
 - [GitHub Repo](https://github.com/danny-pantoja/miniLearn-react)
 - [Deployed Client](https://danny-pantoja.github.io/miniLearn-react)
 
+## Installation
+
+1. Download zip.
+2. Unzip the application.
+3. Change directories into `miniLearn-react`.
+4. Upate `package.json` file with your GitHub account name and repo.
+5. Run `npm install` to install dependencies.
+6. Run the front-end development server with `npm start`.
+
 ## Planning Story
 
 - Create the API models and routes.
@@ -38,14 +47,13 @@ miniLearn is video sharing app for allowing snipets of videos for programming an
 ### Technologies Used
 
 - React
-- Javascript
+- JavaScript
 - HTML
 - CSS
 
-
-## Images
-
 #### Wireframe:
-
+![wireframe_home](https://i.imgur.com/tgF16VE.png)
+![wireframe_sign](https://i.imgur.com/dgNA9an.png)
+![wireframe_videos](https://i.imgur.com/UmN72tk.png)
 
 ---

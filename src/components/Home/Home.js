@@ -1,16 +1,14 @@
 import React from 'react'
+import Layout from '../shared/Layout'
 import './Home.css'
 // import Layout from '../shared/Layout/Layout'
-function LandingPage () {
-  // const landingPage = () => {}
-  return (
-    <div className='landingPage'>
-      <h1>Welcome to miniLearn</h1>
-    </div>
-  )
-}
+const Home = () => (
+  <Layout>
+    <h4>Welcome to miniLearn</h4>
+  </Layout>
+)
 
-export default LandingPage
+export default Home
 // =======
 //       <div>
 //         <img href='https://i.imgur.com/kCoejp0.png' />
