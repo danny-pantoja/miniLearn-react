@@ -9,5 +9,9 @@ export default {
   instructorContentCreateSuccess: 'Content added successfully',
   instructorContentCreateFailure: 'Conent not added, please check and try again.',
   videoCreateSuccess: 'Content added successfully',
-  videoCreateFailure: 'Conent not added, please check and try again.'
+  videoCreateFailure: 'Conent not added, please check and try again.',
+  videoShowSuccess: 'Here is your video',
+  videoShowFailure: 'Conent not shown, please check and try again.',
+  videoIndexSuccess: 'Here are all the videos',
+  videoIndexFailure: 'Conent not shown, please check and try again.'
 }
